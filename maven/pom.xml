@@ -1,0 +1,39 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!--  <groupId>co.acoustic.publish.example</groupId>-->
+  <groupId>com.ibm.db2</groupId>
+  <artifactId>publish-example</artifactId>
+  <version>0.0.1</version>
+  <packaging>jar</packaging>
+
+  <name>publish-example</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.8</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <distributionManagement>
+    <snapshotRepository>
+        <id>dt-acoustic-snapshots</id>
+        <name>artifactory.acoustic.co-snapshots</name>
+        <url>https://artifactory.acoustic.co:443/artifactory/dt-maven-snapshots-virtual</url>
+    </snapshotRepository>
+    <repository>
+        <id>dt-acoustic-releases</id>
+        <name>artifactory.acoustic.co-releases</name>
+        <url>https://artifactory.acoustic.co:443/artifactory/dt-maven-releases-virtual</url>
+    </repository>
+</distributionManagement>
+
+</project>
