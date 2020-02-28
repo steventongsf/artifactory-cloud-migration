@@ -1,0 +1,5 @@
+ 1457  docker build -t sstong-docker-test .
+ 1458  docker run -p 4000:80 sstong-docker-test
+ 1469  docker login artifactory.acoustic.co
+ 1471  docker tag 84a3f5bb4425 artifactory.acoustic.co/dt-docker-local/sstong-docker-test:1.0
+ 1472  docker push artifactory.acoustic.co/dt-docker-local/sstong-docker-test:1.0
